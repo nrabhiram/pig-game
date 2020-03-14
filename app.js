@@ -6,4 +6,16 @@ Otherwise, the scoe you held will be added to the total score.
 The first player to reach a total score of 100 points wins.
 */
 
+var scores, roundScore, activePlayer, dice;
+
+scores = [0, 0];
+roundScore = 0;
+activePlayer = 0;
+dice = Math.floor(Math.random() * 6) + 1;
+
+document.querySelector('.dice').style.display = 'none';
+document.getElementById('score-0').textContent = 0;
+document.getElementById('current-0').textContent = 0;
+document.getElementById('score-1').textContent = 0;
+document.getElementById('current-1').textContent = 0;
 
